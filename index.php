@@ -10,6 +10,10 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
     </head>
     <body>
 
@@ -22,5 +26,10 @@
                 </div>    
         </div>
 
+        <div class="container" id="socials">
+            <a class="fa fa-soundcloud" href="https://www.soundcloud.com"></a>
+            <a class="fa fa-github" href="https://www.github.com"></a>
+
+        </div>
     </body>
 </html>

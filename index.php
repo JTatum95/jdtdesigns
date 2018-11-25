@@ -27,9 +27,9 @@
         </div>
 
         <div class="container" id="socials">
-            <a class="fa fa-soundcloud" href="https://www.soundcloud.com"></a>
-            <a class="fa fa-github" href="https://www.github.com"></a>
-
+            <a class="fa fa-soundcloud" href="https://www.soundcloud.com/jessetat95"></a>
+            <a class="fa fa-github" href="https://www.github.com/Jtatum95"></a>
+            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/jesse-tatum-534b43109/"></a>
         </div>
     </body>
 </html>

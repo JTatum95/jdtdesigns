@@ -22,14 +22,18 @@
                 <h1 class="display-4">JDTDesigns</h1>
                 <p class="lead">The future home of something</p>
                 <hr class="my-4">
-                <p>I like to create many different things and will eventually put some of it here<p>
+                <p>I like to create many different things and will eventually put some of it here. Some development projects can be found at:
+                <a href="jtatum95.github.io">jtatum95.github.io</a>
+                </p>
                 </div>    
         </div>
 
         <div class="container" id="socials">
-            <a class="fa fa-soundcloud" href="https://www.soundcloud.com/jessetat95"></a>
-            <a class="fa fa-github" href="https://www.github.com/Jtatum95"></a>
-            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/jesse-tatum-534b43109/"></a>
+            <p class="text-center">
+                <a class="fa fa-soundcloud" href="https://www.soundcloud.com/jessetat95"></a>
+                <a class="fa fa-github" href="https://www.github.com/Jtatum95"></a>
+                <a class="fa fa-linkedin" href="https://www.linkedin.com/in/jesse-tatum-534b43109/"></a>
+            </p> 
         </div>
     </body>
 </html>

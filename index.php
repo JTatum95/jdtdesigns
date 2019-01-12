@@ -22,7 +22,7 @@
                 <h1 class="display-4">JDTDesigns</h1>
                 <p class="lead">The future home of something</p>
                 <hr class="my-4">
-                <p>Maybe a portfolio? Or project? Or music? I like to create many different things and hope to soon show the world!</p>
+                <p>I like to create many different things and will eventually put some of it here<p>
                 </div>    
         </div>
 

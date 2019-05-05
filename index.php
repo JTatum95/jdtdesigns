@@ -3,7 +3,7 @@
 <html>
     <head>
         <!-- Latest compiled and minified CSS -->
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/logo/favicon.ico" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -12,9 +12,8 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-
 
     </head>
     <body>
@@ -25,7 +24,7 @@
                 <p class="lead">The future home of something</p>
                 <hr class="my-4">
                 <p>I like to create many different things and will eventually put some of it here. Some development projects can be found at:
-                <a href="jtatum95.github.io">jtatum95.github.io</a>
+                <a href="http://jtatum95.github.io">jtatum95.github.io</a>
                 </p>
                 </div>    
         </div>

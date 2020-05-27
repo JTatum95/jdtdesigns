@@ -4,12 +4,6 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 
-/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -210,6 +204,17 @@ header.masthead h1 {
   }
 }
 
+@media (max-width: 992px){
+  .contact-info div {
+    padding: 1em 0 1em 0;
+  }
+}
+
+/* 576 -> 1028 */
+/*@media screen and (max-width: 1028px) and (min-width: 576px) {*/
+/* Adjust rows to width*/
+/*}*/
+
 /* Portfolio */
 #portfolio .container-fluid {
   max-width: 1920px;
@@ -299,7 +304,7 @@ button.bg-primary:focus {
 /* Color Change Section ends */
 
 .portheader {
-  padding: 1em 0 1em 0;
+  padding: 2em 0 2em 0;
 }
 
 .dropdown_wrapper div {

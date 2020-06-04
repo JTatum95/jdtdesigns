@@ -330,3 +330,8 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}

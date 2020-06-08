@@ -348,8 +348,11 @@ footer {
   .grid-sizer, .grid-item {
     width: 50%;
   }
+
   .odd-number {
-    width: 100%;
+    text-align: center !important;
+    /*width: 60%;*/
+    left: 25% !important;
   }
 }
 

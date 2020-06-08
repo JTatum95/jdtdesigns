@@ -39,6 +39,29 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  // init Masonry
+  // var $grid = $('.grid').masonry({
+  //   // set itemSelector so .grid-sizer is not used in layout
+  //   itemSelector: '.grid-item',
+  //   // use element for option
+  //   columnWidth: '.grid-sizer',
+  //   percentPosition: true
+  // });
+
+  var $grid = $('.grid').masonry({
+    // set itemSelector so .grid-sizer is not used in layout
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+      // use element for option
+      columnWidth: '.grid-sizer'
+    }
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress(function() {
+    $grid.masonry();
+  });
+
+
   // Magnific popup calls
   $('.portfolio-wrapper').magnificPopup({
     delegate: 'a',

@@ -38,11 +38,20 @@
     <!-- Theme CSS - Includes Bootstrap -->
     <link href="css/creative.css" rel="stylesheet">
 
+    <!-- Masonry import -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!--    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>-->
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154334988-3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-154334988-3');
@@ -113,7 +122,8 @@
                 <h2 class="text-white mt-0">Hello, I am Jesse. Good to meet you.</h2>
                 <hr class="divider light my-4">
                 <p class="text-white-50 mb-4">I am a flexible developer and artist who
-                    is passionate about design and community. I am passionate about learning and growing whenever possible. I
+                    is passionate about design and community. I am passionate about learning and growing whenever
+                    possible. I
                     specialize in design, development, and maintenance of websites. I also have experience in vector
                     art, logo design, photography, audio engineering, and software development. I am always ready to
                     take on new challenges and engage with different skills.</p>
@@ -187,8 +197,9 @@
         <!--                <a href="http://www.missioncostarica.com" class="project-link" target="_blank">www.MissionCostaRica.com</a>-->
         <!--            </div>-->
         <!--        </div>-->
-        <div class="row no-gutters">
-            <div class="col-lg-4 col-sm-6">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item">
                 <a class="portfolio-box " href="img/portfolio/thumbnails/Golden%20Orb%20Thumbnail.png">
                     <img class="img-fluid" src="img/portfolio/fullsize/Golden%20Orb%20Screenshot.png"
                          alt="Golden Orb Art Studios homepage">
@@ -203,7 +214,7 @@
                 </a>
             </div>
 
-            <div class="col-lg-4 col-sm-6">
+            <div class="grid-item">
                 <a class="portfolio-box" href="img/portfolio/thumbnails/Messe%20Recipes%20Thumbnail.png">
                     <img class="img-fluid" src="img/portfolio/fullsize/Messe%20Recipes%20Screenshot.png"
                          alt="Messe Recipes food blog home page">
@@ -218,7 +229,7 @@
                 </a>
             </div>
 
-        <div class="col-lg-4 col-sm-6">
+            <div class="grid-item odd-number">
                 <a class="portfolio-box" href="img/portfolio/thumbnails/MissionCostaRica%20Thumbail.png">
                     <img class="img-fluid" src="img/portfolio/fullsize/MissionCostaRica%20Screenshot.png" alt="">
                     <div class="portfolio-box-caption">
@@ -233,10 +244,12 @@
             </div>
         </div>
 
+
         <!-- Art Heading -->
         <h4 class="text-center mt-0 portheader" id="art">Art</h4>
-        <div class="row no-gutters">
-            <div class="col-lg-4 col-sm-6">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item">
                 <a class="portfolio-box" href="img/portfolio/fullsize/Take%20Heart.jpg">
                     <img class="img-fluid" src="img/portfolio/thumbnails/Take%20Heart%20thumb.jpg" alt="">
                     <div class="portfolio-box-caption">
@@ -250,7 +263,8 @@
                 </a>
             </div>
 
-            <div class="col-lg-4 col-sm-6">
+
+            <div class="grid-item">
                 <a class="portfolio-box" href="img/portfolio/Messe%20Recipes%20logo.png">
                     <img class="img-fluid" src="img/portfolio/Messe%20Recipes%20logo.png" alt="">
                     <div class="portfolio-box-caption p-3">
@@ -264,9 +278,10 @@
                 </a>
             </div>
 
-            <div class="col-lg-4 col-sm-6">
+            <div class="grid-item">
                 <a class="portfolio-box" href="img/portfolio/fullsize/For%20the%20sake%20of%20love.jpg">
-                    <img class="img-fluid" src="img/portfolio/thumbnails/For%20the%20sake%20of%20love%20thumb.jpg" alt="">
+                    <img class="img-fluid" src="img/portfolio/thumbnails/For%20the%20sake%20of%20love%20thumb.jpg"
+                         alt="">
                     <div class="portfolio-box-caption p-3">
                         <div class="project-category text-white-50">
                             Vector art, photo editing, & typography
@@ -277,10 +292,9 @@
                     </div>
                 </a>
             </div>
-        </div>
-        <!-- Row 2 -->
-        <div class="row no-gutters">
-            <div class="col-lg-4 col-sm-6">
+
+            <!-- Row 2 -->
+            <div class="grid-item">
                 <a class="portfolio-box" href="img/portfolio/fullsize/Vector%20Noods%20Colored.jpg">
                     <img class="img-fluid" src="img/portfolio/thumbnails/Vector%20Noods%20Thumb.jpg" alt="">
                     <div class="portfolio-box-caption">
@@ -294,7 +308,7 @@
                 </a>
             </div>
 
-            <div class="col-lg-4 col-sm-6">
+            <div class="grid-item">
                 <a class="portfolio-box" href="img/portfolio/Pixel%20Profile.png">
                     <img class="img-fluid" src="img/portfolio/Pixel%20Profile.png" alt="">
                     <div class="portfolio-box-caption">
@@ -308,7 +322,7 @@
                 </a>
             </div>
 
-            <div class="col-lg-4 col-sm-6">
+            <div class="grid-item">
                 <a class="portfolio-box" href="img/portfolio/Calendar.png">
                     <img class="img-fluid" src="img/portfolio/Calendar.png" alt="">
                     <div class="portfolio-box-caption">
@@ -321,11 +335,9 @@
                     </div>
                 </a>
             </div>
-        </div>
 
-        <!-- Row 3 -->
-        <div class="row no-gutters">
-            <div class="col-lg-4 col-md-6 col-sm-6">
+            <!-- Row 3 -->
+            <div class="grid-item">
                 <a class="portfolio-box" href="img/portfolio/La%20Marzocco%20Vector%20Colorized.png">
                     <img class="img-fluid" src="img/portfolio/La%20Marzocco%20Vector%20Colorized.png" alt="">
                     <div class="portfolio-box-caption p-3">
@@ -338,7 +350,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="grid-item">
                 <a class="portfolio-box" href="img/portfolio/fullsize/latte%20art.png">
                     <img class="img-fluid" src="img/portfolio/thumbnails/latte%20art%20thumbnail.png" alt="">
                     <div class="portfolio-box-caption p-3">
@@ -351,7 +363,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="grid-item odd-number">
                 <a class="portfolio-box" href="img/portfolio/fullsize/Tree.jpeg">
                     <img class="img-fluid" src="img/portfolio/thumbnails/Tree%20thumbnail.jpg" alt="">
                     <div class="portfolio-box-caption p-3">
@@ -365,33 +377,35 @@
                 </a>
             </div>
         </div>
-
-        <!-- Music Heading -->
-<!--        <h4 class="text-center mt-0 portheader" id="music">Music</h4>-->
-<!--        <div class="row no-gutters">-->
-<!--            <div class="col">-->
-<!--                <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay"-->
-<!--                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/798868534&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>-->
-<!--            </div>-->
-<!--            <div class="col">-->
-<!--                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"-->
-<!--                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/807058642&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-sm-6">-->
-<!--                <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">-->
-<!--                    <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">-->
-<!--                    <div class="portfolio-box-caption p-3">-->
-<!--                        <div class="project-category text-white-50">-->
-<!--                            Category-->
-<!--                        </div>-->
-<!--                        <div class="project-name">-->
-<!--                            Project Name-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </a>-->
-<!--            </div>-->
-        </div>
     </div>
+
+
+
+    <!-- Music Heading -->
+    <!--        <h4 class="text-center mt-0 portheader" id="music">Music</h4>-->
+    <!--        <div class="row no-gutters">-->
+    <!--            <div class="col">-->
+    <!--                <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay"-->
+    <!--                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/798868534&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>-->
+    <!--            </div>-->
+    <!--            <div class="col">-->
+    <!--                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"-->
+    <!--                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/807058642&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-4 col-sm-6">-->
+    <!--                <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">-->
+    <!--                    <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">-->
+    <!--                    <div class="portfolio-box-caption p-3">-->
+    <!--                        <div class="project-category text-white-50">-->
+    <!--                            Category-->
+    <!--                        </div>-->
+    <!--                        <div class="project-name">-->
+    <!--                            Project Name-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </a>-->
+    <!--            </div>-->
+
 </section>
 
 <!-- Contact Section -->

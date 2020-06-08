@@ -210,11 +210,6 @@ header.masthead h1 {
   }
 }
 
-/* 576 -> 1028 */
-/*@media screen and (max-width: 1028px) and (min-width: 576px) {*/
-/* Adjust rows to width*/
-/*}*/
-
 /* Portfolio */
 #portfolio .container-fluid {
   max-width: 1920px;
@@ -264,6 +259,13 @@ header.masthead h1 {
 
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+@media screen and (max-width: 650px){
+  .portfolio-box-caption{
+    opacity: 0 !important;
+    display: none !important;
+  }
 }
 
 /* Below can be removed for blue theme variation */
@@ -334,4 +336,36 @@ footer {
 .img-fluid {
   width: 100%;
   height: auto;
+}
+
+
+/* Masonry CSS */
+.grid-sizer, .grid-item {
+  width: 33.333%;
+}
+
+@media screen and (max-width: 992px) {
+  .grid-sizer, .grid-item {
+    width: 50%;
+  }
+  .odd-number {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .grid-sizer, .grid-item {
+    width: 100%;
+  }
+}
+
+
+.grid-item {
+  float: left;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }

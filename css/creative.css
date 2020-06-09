@@ -218,10 +218,10 @@ header.masthead h1 {
 #portfolio .container-fluid .portfolio-box {
   position: relative;
   display: block;
-  min-height: 100%;
+  width: 100%;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+.portfolio-box-caption {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,6 +231,8 @@ header.masthead h1 {
   position: absolute;
   bottom: 0;
   left: 0;
+  top: 0;
+  right: 0;
   text-align: center;
   opacity: 0;
   color: #fff;
@@ -246,16 +248,33 @@ header.masthead h1 {
   text-transform: uppercase;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+.portfolio-box-caption .project-name {
   font-size: 1.2rem;
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-link {
-  font-size: 1.2rem;
-  padding: 0;
-  margin: 0;
+.portfolio-box-caption .project-link {
   text-decoration: none;
+  padding-top: 2em;
 }
+
+.portfolio-box-caption .site-link {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #fff;
+}
+
+.portfolio-box-caption .site-link:hover {
+  border-color: #f4623a;
+  background-color: rgba(108,117,125,.75) !important;
+  -webkit-transform: scale(1.05);
+  transition: .2s ease;
+}
+
+.portfolio-box-caption .site-link:visited {
+  border-color: #fff;
+  border-width: medium;
+}
+
 
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
@@ -269,6 +288,12 @@ header.masthead h1 {
 }
 
 /* Below can be removed for blue theme variation */
+
+.btn-outline-primary {
+  border-color: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
 
 .btn-primary {
   color: #fff;
@@ -339,6 +364,7 @@ footer {
 }
 
 
+
 /* Masonry CSS */
 .grid-sizer, .grid-item {
   width: 33.333%;
@@ -348,12 +374,6 @@ footer {
   .grid-sizer, .grid-item {
     width: 50%;
   }
-
-  .odd-number {
-    text-align: center !important;
-    /*width: 60%;*/
-    left: 25% !important;
-  }
 }
 
 @media screen and (max-width: 650px) {
@@ -361,7 +381,6 @@ footer {
     width: 100%;
   }
 }
-
 
 .grid-item {
   float: left;

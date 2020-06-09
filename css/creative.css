@@ -257,6 +257,10 @@ header.masthead h1 {
   padding-top: 2em;
 }
 
+.mobile-link {
+  display: none !important;
+}
+
 .portfolio-box-caption .site-link {
   font-size: 1.2rem;
   margin: 0;
@@ -281,9 +285,23 @@ header.masthead h1 {
 }
 
 @media screen and (max-width: 650px){
-  .portfolio-box-caption{
-    opacity: 0 !important;
-    display: none !important;
+  .web-grid .portfolio-box-caption {
+    background: none;
+    opacity: 1 !important;
+  }
+  .web-grid .project-category, .web-grid .project-name { display: none; }
+  .portfolio-box-caption .project-link {
+    opacity: 1 !important;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1em;
+  }
+  .portfolio-box-caption .site-link {
+    background-color: #f4623a;
+    font-size: 1em;
+  }
+  .web-grid .grid-item .portfolio-box {
+    padding-bottom: 2.5rem;
   }
 }
 
@@ -362,7 +380,6 @@ footer {
   width: 100%;
   height: auto;
 }
-
 
 
 /* Masonry CSS */

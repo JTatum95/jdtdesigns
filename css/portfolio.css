@@ -47,7 +47,7 @@ body {
 
 /* ---- grid ---- */
 .grid {
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 /* clear fix */
 .grid:after {
@@ -61,19 +61,9 @@ body {
     display: block;
 }
 
-.button-group .btn-primary:active {
-    background-color: #6c757d !important;
+.button-group .btn-outline-secondary:hover {
+    background-color: rgba(244, 98, 58, .5) !important;
 }
-.button-group .btn-primary:focus {
-    background-color: #6c757d !important;
-}
-.btn-primary:not(:disabled):not(.disabled).active {
-    background-color: #6c757d !important;
-}
-
-/*.button-group .btn-primary:focus {*/
-
-/*}*/
 
 #btn-container {
     padding-top: 1em;

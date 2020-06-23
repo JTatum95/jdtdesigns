@@ -10,18 +10,10 @@
 
     <link rel="icon" type="image/x-icon" href="/logo/favicon.ico"/>
 
-    <!-- Bootstrap minified -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
 
     <!-- Font Awesome Icons -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -31,41 +23,368 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif" rel="stylesheet">
 
     <!-- Plugin CSS -->
-<!--    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">-->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-<!--    <link href="css/creative.css" rel="stylesheet">-->
+    <link href="css/creative.css" rel="stylesheet">
     <link href="css/portfolio.css" rel="stylesheet">
 
     <!-- Masonry CDN -->
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="js/portfolio.js" type="application/javascript"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154334988-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <!--    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154334988-3"></script>-->
+    <!--    <script>-->
+    <!--        window.dataLayer = window.dataLayer || [];-->
+    <!--        function gtag(){dataLayer.push(arguments);}-->
+    <!--        gtag('js', new Date());-->
 
-        gtag('config', 'UA-154334988-3');
-    </script>
+    <!--        gtag('config', 'UA-154334988-3');-->
+    <!--    </script>-->
 </head>
 <body>
 
-<div class="grid">
-    <div class="grid-sizer"></div>
-    <div class="grid-item">
-        <img src="img/portfolio/fullsize/photo/allium.jpg" alt=""/>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light py-3" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">JDTDesigns</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger dropdown" href="#portfolio" id="dropdown">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="grid-item">
+</nav>
+
+
+<!-- Button Group -->
+<div class="container" id="btn-container">
+    <div class="btn-group button-group filter-button-group" role="group" aria-label="filter group">
+        <button class="btn btn-primary active" data-filter="*">All</button>
+        <button class="btn btn-primary" data-filter=".photo">Photo</button>
+        <button class="btn btn-primary" data-filter=".design">Design</button>
+        <button class="btn btn-primary" data-filter=".logo">Logo</button>
+        <button class="btn btn-primary" data-filter=".type">Type</button>
+        <button class="btn btn-primary" data-filter=".web">Web</button>
+    </div>
+</div>
+
+
+<div class="grid art-grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item photo width2">
+        <img src="img/portfolio/fullsize/photo/Field.jpg" alt=""/>
+    </div>
+    <div class="grid-item photo">
         <img src="img/portfolio/fullsize/photo/Bread%20and%20Coffee.jpg" alt=""/>
     </div>
-    <div class="grid-item grid-item--width2">
+    <div class="grid-item photo">
+        <img src="img/portfolio/fullsize/photo/Fern.jpg" alt=""/>
+    </div>
+    <div class="grid-item photo">
+        <img src="img/portfolio/fullsize/photo/blue%20spruce.jpg" alt=""/>
+    </div>
+    <div class="grid-item width2 photo">
         <img src="img/portfolio/fullsize/photo/four%20brothers.jpg" alt=""/>
+    </div>
+    <div class="grid-item photo">
+        <img src="img/portfolio/fullsize/photo/joy.jpg" alt=""/>
+    </div>
+    <div class="grid-item photo">
+        <img src="img/portfolio/fullsize/photo/f&h.jpg" alt=""/>
+    </div>
+    <div class="grid-item photo">
+        <img src="img/portfolio/fullsize/photo/Iris.jpg" alt=""/>
+    </div>
+    <div class="grid-item photo">
+        <img src="img/portfolio/fullsize/photo/Harvest.jpg" alt=""/>
+    </div>
+    <div class="grid-item photo">
+        <img src="img/portfolio/fullsize/photo/allium.jpg" alt=""/>
+    </div>
+    <div class="grid-item photo">
+        <img src="img/portfolio/fullsize/photo/Chive.jpg" alt=""/>
+    </div>
+
+    <div class="grid-item width2 photo">
+        <img src="img/portfolio/fullsize/photo/Caela%20Brick.jpg" alt=""/>
+    </div>
+    <div class="grid-item photo">
+        <img src="img/portfolio/fullsize/photo/Roaster.jpg" alt=""/>
+    </div>
+    <div class="grid-item photo">
+        <img src="img/portfolio/fullsize/photo/pink%20flower.jpg" alt=""/>
+    </div>
+    <div class="grid-item photo">
+        <img src="img/portfolio/fullsize/photo/white%20flower.jpg" alt=""/>
+    </div>
+
+    <div class="grid-item web">
+        <div class="portfolio-box">
+            <img class="img-fluid" src="img/portfolio/thumbnails/Golden%20Orb%20Thumbnail.png"
+                 alt="Golden Orb Art Studios homepage">
+            <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                    Full Stack Web Development
+                </div>
+                <div class="project-name">
+                    Golden Orb Art
+                </div>
+                <div class="project-link">
+                    <a href="https://goldenorbart.com" class="site-link btn btn-outline-primary" target="_blank">www.GoldenOrbArt.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-item web">
+        <div class="portfolio-box">
+            <img class="img-fluid" src="img/portfolio/thumbnails/Messe%20Recipes%20Thumbnail.png"
+                 alt="Messe Recipes food blog home page">
+            <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                    Wordpress driven food blog
+                </div>
+                <div class="project-name">
+                    Messe Recipes
+                </div>
+                <div class="project-link">
+                    <a href="https://messe.recipes" class="site-link btn btn-outline-primary" target="_blank">www.Messe.recipes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-item web">
+        <div class="portfolio-box">
+            <img class="img-fluid" src="img/portfolio/thumbnails/MissionCostaRica%20Thumb.png" alt="MissionCostaRica Screenshot">
+            <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                    CMS Migrated Missionary Support Site
+                </div>
+                <div class="project-name">
+                    Mission Costa Rica
+                </div>
+                <div class="project-link">
+                    <a href="http://www.missioncostarica.com" class="site-link btn btn-outline-primary" target="_blank">www.MissionCostaRica.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-item design">
+        <a class="portfolio-box" href="img/portfolio/fullsize/Vector%20Noods%20Colored.png">
+            <img class="img-fluid" src="img/portfolio/thumbnails/Vector%20Noods%20Colored%20Thumb.png" alt="Pastel Coloed Bowl of Udon Noodles">
+            <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                    Vector Art
+                </div>
+                <div class="project-name">
+                    Udon Noodles
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="grid-item design type">
+        <a class="portfolio-box" href="img/portfolio/fullsize/sunset%20badge.png">
+            <img class="img-fluid" src="img/portfolio/thumbnails/sunset%20badge%20thumb.png" alt="Retro themed sunset badge">
+            <div class="portfolio-box-caption p-3">
+                <div class="project-category text-white-50">
+                    Vector Badge Design
+                </div>
+                <div class="project-name">
+                    Summer Sunset
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="grid-item design">
+        <a class="portfolio-box" href="img/portfolio/Pixel%20Profile.png">
+            <img class="img-fluid" src="img/portfolio/Pixel%20Profile.png" alt="Pixel art self-portrait">
+            <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                    Pixel Art
+                </div>
+                <div class="project-name">
+                    Self Portrait
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="grid-item design type">
+        <a class="portfolio-box" href="img/portfolio/fullsize/Pura%20Vida%20Tropical%20Outline.png">
+            <img class="img-fluid" src="img/portfolio/thumbnails/Pura%20Vida%20Tropical%20Outline%20Thumb.png" alt="Pura Vida with tropical border">
+            <div class="portfolio-box-caption p-3">
+                <div class="project-category text-white-50">
+                    Vector art & typography
+                </div>
+                <div class="project-name">
+                    Pura Vida Tropical
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="grid-item design">
+        <a class="portfolio-box" href="img/portfolio/fullsize/Ice%20cream.png">
+            <img class="img-fluid" src="img/portfolio/thumbnails/Ice%20cream%20thumb.png" alt="Ice Cream Beach">
+            <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                    Vector Art
+                </div>
+                <div class="project-name">
+                    Ice Cream Beach
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="grid-item design type">
+        <a class="portfolio-box" href="img/portfolio/fullsize/Pura%20Vida%20Tropical.png">
+            <img class="img-fluid" src="img/portfolio/thumbnails/Pura%20Vida%20Tropical%20Thumb.png"
+                 alt="Pura Vida with tropical background">
+            <div class="portfolio-box-caption p-3">
+                <div class="project-category text-white-50">
+                    Vector art & typography
+                </div>
+                <div class="project-name">
+                    Pura Vida Tropical 2
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="grid-item design">
+        <a class="portfolio-box" href="img/portfolio/fullsize/Plant%20art%20colored%20funky.png">
+            <img class="img-fluid" src="img/portfolio/thumbnails/Plant%20art%20colored%20funky%20thumb.png" alt="Colored Monstera Vistosa Plant">
+            <div class="portfolio-box-caption p-3">
+                <div class="project-category text-white-50">
+                    Vector Art
+                </div>
+                <div class="project-name">
+                    Monstera Colorosa
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="grid-item design type">
+        <a class="portfolio-box" href="img/portfolio/La%20Marzocco%20Vector%20Colorized.png">
+            <img class="img-fluid" src="img/portfolio/La%20Marzocco%20Vector%20Colorized.png"
+                 alt="La Marzocco Colored Design">
+            <div class="portfolio-box-caption p-3">
+                <div class="project-category text-white-50">
+                    Vector art
+                </div>
+                <div class="project-name">
+                    La Marzocco
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="grid-item design">
+        <a class="portfolio-box" href="img/portfolio/Calendar.png">
+            <img class="img-fluid" src="img/portfolio/Calendar.png" alt="Minimalist Calendar Icon">
+            <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                    Vector Art
+                </div>
+                <div class="project-name">
+                    One Day
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="grid-item design type photo">
+        <a class="portfolio-box" href="img/portfolio/fullsize/Take%20Heart.png">
+            <img class="img-fluid" src="img/portfolio/thumbnails/Take%20Heart%20thumb.png" alt="Take Heart">
+            <div class="portfolio-box-caption">
+                <div class="project-category text-white-50">
+                    Vector art, photo editing, & typography
+                </div>
+                <div class="project-name">
+                    Take Heart
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="grid-item design">
+        <a class="portfolio-box" href="img/portfolio/fullsize/latte%20art.png">
+            <img class="img-fluid" src="img/portfolio/thumbnails/latte%20art%20thumbnail.png" alt="Digital Latte Art Design">
+            <div class="portfolio-box-caption p-3">
+                <div class="project-category text-white-50">
+                    Vector + Raster Art
+                </div>
+                <div class="project-name">
+                    Latte Art
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="grid-item logo design type">
+        <a class="portfolio-box" href="img/portfolio/fullsize/Messe%20Recipes%20logo.png">
+            <img class="img-fluid" src="img/portfolio/thumbnails/Messe%20Recipes%20logo%20thumb.png" alt="Messe Recipes Logo">
+            <div class="portfolio-box-caption p-3">
+                <div class="project-category text-white-50">
+                    Typhography and Logo Design
+                </div>
+                <div class="project-name">
+                    Messe Recipes Logo
+                </div>
+            </div>
+        </a>
     </div>
 
 </div>
+
+<!-- To Top Button -->
+<a id="to-top" class="btn btn- btn-lg js-scroll-trigger back-to-top" href="#mainNav" role="button">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+<!-- Footer -->
+<footer class="bg-light py-5">
+    <div class="container">
+        <div class="small text-center text-muted">Copyright &copy;JDTDesigns</div>
+    </div>
+</footer>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/masonry.pkgd.min.js"></script>
+<script src="vendor/imagesloaded.pkgd.min.js"></script>
+<script src="vendor/isotope.pkgd.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<!--<script src="js/creative.js"></script>-->
 
 </body>
 </html>

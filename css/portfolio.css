@@ -49,6 +49,7 @@ body {
 .grid {
     padding-top: 1rem;
 }
+
 /* clear fix */
 .grid:after {
     content: '';

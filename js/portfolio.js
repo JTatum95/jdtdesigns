@@ -1,14 +1,22 @@
-// init Masonry
-// var $grid = $('.grid').masonry({
-//     // set itemSelector so .grid-sizer is not used in layout
-//     itemSelector: '.grid-item',
-//     // use element for option
-//     columnWidth: '.grid-sizer',
-//     percentPosition: true
-//
-// });
-
 $( document ).ready(function() {
+    $popup = $('.grid-item:not(.isotope-hidden)');
+    $popup.magnificPopup({
+        delegate: 'a:not(.site-link)',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1]
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function (item) {
+                return item.img.attr('alt') || '';
+            }
+        }
+    });
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
@@ -26,7 +34,7 @@ $( document ).ready(function() {
         percentPosition: true,
         // options for masonry layout mode
         masonry: {
-            columnWidth: '.grid-sizer',
+            columnWidth: '.grid-sizer'
         }
     });
 
@@ -41,23 +49,4 @@ $( document ).ready(function() {
         $(this).addClass('active').siblings().removeClass('active');
         // this.backgroundColor = "#6c757d";
     });
-
-    $('.grid').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1]
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            titleSrc: function (item) {
-                return item.img.attr('alt') || '';
-            }
-        }
-    });
-
 });

@@ -1,22 +1,22 @@
 $( document ).ready(function() {
-    $popup = $('.grid-item:not(.isotope-hidden)');
-    $popup.magnificPopup({
-        delegate: 'a:not(.site-link)',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1]
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            titleSrc: function (item) {
-                return item.img.attr('alt') || '';
-            }
-        }
-    });
+    // $popup = $('.grid-item:not(.isotope-hidden)');
+    // $popup.magnificPopup({
+    //     delegate: 'a:not(.site-link)',
+    //     type: 'image',
+    //     tLoading: 'Loading image #%curr%...',
+    //     mainClass: 'mfp-img-mobile',
+    //     gallery: {
+    //         enabled: true,
+    //         navigateByImgClick: true,
+    //         preload: [0, 1]
+    //     },
+    //     image: {
+    //         tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+    //         titleSrc: function (item) {
+    //             return item.img.attr('alt') || '';
+    //         }
+    //     }
+    // });
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {

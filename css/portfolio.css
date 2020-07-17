@@ -96,6 +96,14 @@ body {
     display: none;
 }
 
+hr.divider {
+    max-width: 3.25rem;
+    border-width: 0.2rem;
+    border-color: #f4623a;
+    /*border-color: #007DF7;*/
+}
+
+
 /* ---- .grid-item ---- */
 
 .grid-sizer,
@@ -144,67 +152,16 @@ body {
     width: 100%;
 }
 
-/* portfolio box */
-#works .container-fluid .portfolio-box {
-    position: relative;
-    display: block;
-    width: 100%;
+.site-link {
+    border: none !important;
 }
 
-.portfolio-box-caption {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    right: 0;
-    text-align: center;
-    opacity: 0;
-    color: #fff;
-    background: rgba(244, 98, 58, 0.9);
-    /*background: rgba(0, 125, 247, 0.9);*/
-    transition: opacity 0.25s ease;
+.site-link:hover { background-color: #f4623a !important; }
+.site-link:focus {
+    color: #6c757d !important;
+    box-shadow: 0 0 0 0.2rem #6c757d !important;
 }
+.site-link:active { background-color: #f24516 !important; }
+.site-link img:focus { outline: none !important; }
 
-.portfolio-box .portfolio-box-caption .project-category {
-    font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.portfolio-box-caption .project-name {
-    font-size: 1.2rem;
-}
-
-.portfolio-box-caption .project-link {
-    text-decoration: none;
-    padding-top: 2em;
-}
-
-.portfolio-box-caption .site-link {
-    font-size: 1rem;
-    margin: 0;
-    color: #fff;
-}
-
-.portfolio-box-caption .site-link:hover {
-    border-color: #f4623a;
-    background-color: rgba(108,117,125,.75) !important;
-    -webkit-transform: scale(1.05);
-    transition: .2s ease;
-}
-
-.portfolio-box-caption .site-link:visited {
-    border-color: #fff;
-    border-width: medium;
-}
-
-.portfolio-box:hover .portfolio-box-caption {
-    opacity: 1;
-}
+/*.site-link:active:focus { box-shadow: none !important; }*/

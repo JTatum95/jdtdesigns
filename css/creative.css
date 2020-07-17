@@ -283,24 +283,28 @@ header.masthead h1 {
   opacity: 1;
 }
 
+
 @media screen and (max-width: 650px){
-  .web-grid .portfolio-box-caption {
-    background: none;
-    opacity: 1 !important;
-  }
-  .web-grid .project-category, .web-grid .project-name { display: none; }
-  .portfolio-box-caption .project-link {
-    opacity: 1 !important;
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 1em;
-  }
-  .portfolio-box-caption .site-link {
-    background-color: #f4623a;
-    font-size: 1em;
-  }
-  .web-grid .grid-item .portfolio-box {
-    padding-bottom: 2.5rem;
+  /*.web-grid .portfolio-box-caption {*/
+  /*  background: none;*/
+  /*  opacity: 1 !important;*/
+  /*}*/
+  /*.web-grid .project-category, .web-grid .project-name { display: none; }*/
+  /*.portfolio-box-caption .project-link {*/
+  /*  opacity: 1 !important;*/
+  /*  position: absolute;*/
+  /*  bottom: 0;*/
+  /*  padding-bottom: 1em;*/
+  /*}*/
+  /*.portfolio-box-caption .site-link {*/
+  /*  background-color: #f4623a;*/
+  /*  font-size: 1em;*/
+  /*}*/
+  /*.web-grid .grid-item .portfolio-box {*/
+  /*  padding-bottom: 2.5rem;*/
+  /*}*/
+  .mobile-link {
+    display: inline-block !important;
   }
 }
 
@@ -377,6 +381,11 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+  header.masthead {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg-masthead-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+  }
   .grid-sizer, .grid-item {
     width: 50%;
   }

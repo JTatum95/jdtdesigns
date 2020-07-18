@@ -58,9 +58,15 @@ $(document).ready(function () {
     });
 
     $('.filter-button-group').on('click', 'button', function () {
+        $mp = $.magnificPopup.instance;
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({filter: filterValue});
         $(this).addClass('active').siblings().removeClass('active');
+        console.log("Before " + $mp.items);
+        $mp.items = $.find(filterValue);
+        console.log("After " + $mp.items);
+
+        $mp.updateItemHTML();
 
         // $.each(grids, function(i, val){
         //     if(i == filterValue.substr(1))

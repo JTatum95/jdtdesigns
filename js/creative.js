@@ -38,7 +38,7 @@ $(window).scroll(navbarCollapse);
 
 
 $(document).ready(function() {
-  // Button for inaccesible site
+  // Button for inaccessible site
   $('#go_button').click(function(){
     alert("This site is currently pending renewal. Check again later.");
     return false;
@@ -48,7 +48,7 @@ $(document).ready(function() {
     $('.art-grid').magnificPopup({
       delegate: 'a',
       type: 'image',
-      tLoading: 'Loading image #%curr%...',
+      tLoading: 'Loading image...',
       mainClass: 'mfp-img-mobile',
       gallery: {
         enabled: true,

@@ -36,11 +36,10 @@ $(document).ready(function () {
         $(this).addClass('active').siblings().removeClass('active');
     });
 
-
     $('.art-grid').magnificPopup({
         delegate: 'a',
         type: 'image',
-        tLoading: 'Loading image #%curr%...',
+        tLoading: 'Loading image...',
         mainClass: 'mfp-img-mobile',
         gallery: {
             enabled: false,
@@ -52,24 +51,4 @@ $(document).ready(function () {
             }
         }
     });
-
-    // Single image popup boxes for filtering
-    // $('.art-grid').magnificPopup({
-    //     type: 'image',
-    //     delegate: 'img-mfp'
-    //     closeOnContentClick: true,
-    //     closeBtnInside: false,
-    //     fixedContentPos: true,
-    //     mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-    //     image: {
-    //         verticalFit: true
-    //     },
-    //     gallery: {
-    //         enabled: false
-    //     }
-    //     zoom: {
-    //         enabled: true,
-    //         duration: 300 // don't forget to change the duration also in CSS
-    //     }
-    // });
 });

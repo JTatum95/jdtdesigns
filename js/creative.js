@@ -38,12 +38,6 @@ $(window).scroll(navbarCollapse);
 
 
 $(document).ready(function() {
-  // Button for inaccessible site
-  $('#go_button').click(function(){
-    alert("This site is currently pending renewal. Check again later.");
-    return false;
-  });
-
   // Magnific popup calls
     $('.art-grid').magnificPopup({
       delegate: 'a',

@@ -279,30 +279,26 @@ header.masthead h1 {
   border-width: medium;
 }
 
+.portfolio-box-caption .site-disabled {
+  font-size: 1rem;
+  margin: 0;
+  color: #fff;
+  border-color: rgb(108,117,125);
+  background-color: rgba(108,117,125,.75) !important;
+}
+
+.portfolio-box-caption .site-disabled:hover {
+  border-color: #f4623a;
+}
+
+
+
 #works .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
 
 
 @media screen and (max-width: 650px){
-  /*.web-grid .portfolio-box-caption {*/
-  /*  background: none;*/
-  /*  opacity: 1 !important;*/
-  /*}*/
-  /*.web-grid .project-category, .web-grid .project-name { display: none; }*/
-  /*.portfolio-box-caption .project-link {*/
-  /*  opacity: 1 !important;*/
-  /*  position: absolute;*/
-  /*  bottom: 0;*/
-  /*  padding-bottom: 1em;*/
-  /*}*/
-  /*.portfolio-box-caption .site-link {*/
-  /*  background-color: #f4623a;*/
-  /*  font-size: 1em;*/
-  /*}*/
-  /*.web-grid .grid-item .portfolio-box {*/
-  /*  padding-bottom: 2.5rem;*/
-  /*}*/
   .mobile-link {
     display: inline-block !important;
   }

@@ -2,8 +2,6 @@
 
 /* force scrollbar */
 html {overflow-y: scroll;}
-
-
 body { font-family: sans-serif; }
 
 /* Navbar */
@@ -61,6 +59,24 @@ body {
     color: #212529;
     text-align: left;
     background-color: #fff;
+}
+
+.btn-outline-primary {
+    border-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #f4623a;
+    border-color: #f4623a;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #f24516;
+    border-color: #ee3e0d;
 }
 
 /* ---- grid ---- */
